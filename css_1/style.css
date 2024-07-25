@@ -70,3 +70,8 @@
   display: flex;
   justify-content: center;
 }
+
+.Home_button {
+  height: 50px;
+  width: 50px;
+}

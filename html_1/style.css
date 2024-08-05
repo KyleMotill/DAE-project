@@ -1,110 +1,110 @@
+/* Reset margin and padding */
 * {
   margin: 0;
   padding: 0;
-  /* border: 50px solid red; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 .topnav {
   background-color: #6db649;
-  padding: 10px;
+  padding: 20px; /* Adjusted padding for better fit */
   font-size: 30px;
   position: relative;
-  padding: 40px;
-}
-
-.topnav a {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+  text-align: center; /* Center-align text */
 }
 
 .topnav h1 {
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 40px;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   margin: 0;
 }
 
-.thumb_1 {
-  height: 675px;
-  border-radius: 25px;
-  object-fit: cover;
-  width: 373px;
-  margin-left: 25px;
-  margin-top: 12.5px;
-  margin-right: 25px;
+.Home_button {
+  height: 50px; /* Adjust size as needed */
+  width: 50px;
+  position: absolute;
+  left: 10px; /* Adjust position if necessary */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.thumb_2 {
-  height: 675px;
-  border-radius: 25px;
-  object-fit: cover;
-  width: 373px;
-  margin-left: 25px;
-  margin-top: 12.5px;
-  margin-right: 25px;
-}
-
-.thumb_3 {
-  height: 675px;
-  border-radius: 25px;
-  object-fit: cover;
-  width: 373px;
-  margin-left: 25px;
-  margin-top: 12.5px;
-  margin-right: 25px;
-}
-
-.thumb_1:hover {
-  width: 400px;
-  height: 700px;
-  margin-top: 0px;
-  transition: all 0.3s ease; 
-}
-
-.thumb_2:hover {
-  width: 400px;
-  height: 700px;
-  margin-top: 0px;
-  transition: all 0.3s ease; 
-}
-
-.thumb_3:hover {
-  width: 400px;
-  height: 700px;
-  margin-top: 0px;
-  transition: all 0.3s ease; 
-}
-
-.image {
+/* Image Gallery Styles */
+.image-gallery {
   display: flex;
   justify-content: center;
+  gap: 25px; /* Space between images */
+  padding: 25px;
+  flex-wrap: wrap; /* Allow wrapping */
 }
 
-.Home_button {
-  height: 50px;
-  width: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+.image-container {
+  position: relative;
+  width: 373px; /* Fixed width for containers */
+  height: 675px; /* Fixed height for containers */
+  overflow: hidden; /* Hide overflow */
+  border-radius: 25px;
+  transition: transform 0.3s ease; /* Smooth scaling effect */
 }
 
+.image-container:hover {
+  transform: scale(1.1); /* Scale container */
+}
+
+.thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Shop Listing Styles */
 .shop_listing {
   display: flex;
   gap: 25px;
   padding: 25px;
+  justify-content: center;
 }
 
 .shop_listing_image {
-  height: 300px;
-  width: 300px;
-  object-fit: cover;
   border-radius: 25px;
+  width: 300px; /* Fixed size for shop listing images */
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Optional: Add scaling effect if needed */
+}
+
+.shop_listing_image:hover {
+  transform: scale(1.05); /* Optional: Scale effect on hover */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer nav ul li a:hover {
+  text-decoration: underline;
 }

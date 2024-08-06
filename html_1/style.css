@@ -1,20 +1,36 @@
-/* Reset margin and padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Roboto', sans-serif;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.container {
+  flex: 1;
 }
 
 .topnav {
   background-color: #6db649;
-  padding: 20px; /* Adjusted padding for better fit */
+  padding: 10px;
   font-size: 30px;
+  text-align: center;
   position: relative;
-  text-align: center; /* Center-align text */
 }
 
 .topnav h1 {
@@ -23,37 +39,52 @@ body {
   font-weight: 700;
   font-size: 40px;
   margin: 0;
+  padding: 0;
+}
+
+.topnav small {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  line-height: 1; 
+}
+
+.topnav h1 + small {
+  margin-top: 0;
 }
 
 .Home_button {
-  height: 50px; /* Adjust size as needed */
+  height: 50px; 
   width: 50px;
   position: absolute;
-  left: 10px; /* Adjust position if necessary */
+  left: 10px; 
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* Image Gallery Styles */
 .image-gallery {
   display: flex;
   justify-content: center;
-  gap: 25px; /* Space between images */
+  gap: 25px; 
   padding: 25px;
-  flex-wrap: wrap; /* Allow wrapping */
+  flex-wrap: wrap; 
 }
 
 .image-container {
   position: relative;
-  width: 373px; /* Fixed width for containers */
-  height: 675px; /* Fixed height for containers */
-  overflow: hidden; /* Hide overflow */
+  width: 373px; 
+  height: 675px; 
+  overflow: hidden;
   border-radius: 25px;
-  transition: transform 0.3s ease; /* Smooth scaling effect */
+  transition: transform 0.3s ease; 
 }
 
 .image-container:hover {
-  transform: scale(1.1); /* Scale container */
+  transform: scale(1.1); 
 }
 
 .thumb {
@@ -62,7 +93,6 @@ body {
   object-fit: cover;
 }
 
-/* Shop Listing Styles */
 .shop_listing {
   display: flex;
   gap: 25px;
@@ -72,17 +102,16 @@ body {
 
 .shop_listing_image {
   border-radius: 25px;
-  width: 300px; /* Fixed size for shop listing images */
+  width: 300px; 
   height: 300px;
   object-fit: cover;
-  transition: transform 0.3s ease; /* Optional: Add scaling effect if needed */
+  transition: transform 0.3s ease; 
 }
 
 .shop_listing_image:hover {
-  transform: scale(1.05); /* Optional: Scale effect on hover */
+  transform: scale(1.05); 
 }
 
-/* Footer Styles */
 .footer {
   background-color: #f1f1f1;
   padding: 20px;
@@ -107,4 +136,30 @@ body {
 
 .footer nav ul li a:hover {
   text-decoration: underline;
+}
+
+.tool_box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+.tool_box img {
+  border-radius: 25px;
+  height: 500px; 
+  width: 600px; 
+  object-fit: cover;
+}
+
+.tool_box h1 {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  margin: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
 }

@@ -155,11 +155,34 @@ body {
 .tool_box h1 {
   display: flex;
   font-family: 'Roboto', sans-serif;
-  font-size: 36px;
+  font-size: 60px;
   margin: 0;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 125px;
+  left: 650px;
   font-family: 'Roboto', sans-serif;
   display: flex;
+  font-weight: 500;
+}
+
+.tool_box small {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+  top: 220px;
+  left: 650px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+.tool_box hr {
+  border-top: 1px solid #bbb;
+  border-radius: 5px;
+  top: 200px;
+  left: 650px;
+  width: 770px;
+  position: absolute;
 }

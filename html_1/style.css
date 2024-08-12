@@ -165,10 +165,10 @@ body {
   font-weight: 500;
 }
 
-.tool_box small {
+.price {
   display: flex;
   font-family: 'Roboto', sans-serif;
-  font-size: 25px;
+  font-size: 50px;
   font-weight: 500;
   margin: 0;
   position: absolute;
@@ -178,10 +178,32 @@ body {
   display: flex;
 }
 
-.tool_box hr {
+.description {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+  top: 320px;
+  left: 650px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+.solid1 {
   border-top: 1px solid #bbb;
   border-radius: 5px;
   top: 200px;
+  left: 650px;
+  width: 770px;
+  position: absolute;
+}
+
+.solid2 {
+  border-top: 1px solid #bbb;
+  border-radius: 5px;
+  top: 300px;
   left: 650px;
   width: 770px;
   position: absolute;

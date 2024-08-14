@@ -84,7 +84,7 @@ body {
 }
 
 .image-container:hover {
-  transform: scale(1.1); 
+  transform: scale(1.05); 
 }
 
 .thumb {
@@ -178,6 +178,32 @@ body {
   display: flex;
 }
 
+.buy {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+  top: 320px;
+  left: 650px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
+.add_to_cart {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  position: absolute;
+  top: 320px;
+  left: 750px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+
 .description {
   display: flex;
   font-family: 'Roboto', sans-serif;
@@ -185,7 +211,7 @@ body {
   font-weight: 500;
   margin: 0;
   position: absolute;
-  top: 320px;
+  top: 420px;
   left: 650px;
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -204,6 +230,15 @@ body {
   border-top: 1px solid #bbb;
   border-radius: 5px;
   top: 300px;
+  left: 650px;
+  width: 770px;
+  position: absolute;
+}
+
+.solid3 {
+  border-top: 1px solid #bbb;
+  border-radius: 5px;
+  top: 400px;
   left: 650px;
   width: 770px;
   position: absolute;
